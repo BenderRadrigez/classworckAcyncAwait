@@ -28,6 +28,8 @@ input, button {
     width: 300px;
     padding: 10px;
     border-radius: 10px;
+    outline: none;
+    border: none;
 }
 button{
     margin-top: 20px;
