@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>профиль</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles/root.css" />
+    <link rel="stylesheet" href="styles/profile.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>icon профиль</h1>
+      <ul id="menu">
+        <li><a href="https://jsonplaceholder.typicode.com/posts">posts</a></li>
+        <li>
+          <a href="https://jsonplaceholder.typicode.com/albums">albums</a>
+        </li>
+        <li><a href="https://jsonplaceholder.typicode.com/todos">todos</a></li>
+      </ul>
+      <button id="logout">log out</button>
+    </header>
+
+    <main>
+      <div id="banner"></div>
+      <div id="profile">
+        <div id="avatar">
+          <img src="https://via.placeholder.com/200x200" alt="avatar" />
+        </div>
+        <div id="user-info">
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="scripts/profile.js"></script>
+  </body>
 </html>

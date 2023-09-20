@@ -1,0 +1,72 @@
+/* body{
+    min-width: 815px;
+} */
+#header{
+    padding: 5px 20px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background: #b38e29;
+
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+    gap: 5vw;
+    margin-left: 30vw;
+}
+#menu>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#logout{
+    padding: 7px;
+    width: 100px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+#banner{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 25vh;
+    background:url("https://www.dogeat.ru/img/%D0%BA%D0%BE%D1%82%20%D0%BD%D0%B5%20%D0%BF%D0%B8%D1%81%D0%B0%D0%B5%D1%82.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#profile{
+    display: flex;
+    border: 1px solid;
+    width: 75%;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    gap: 70px;
+    padding-top: 20vh;
+}
+#avatar{
+    margin-left: 10vw;
+    z-index: 99;
+}
+#avatar>img{
+    border-radius: 5%;    /* circle */
+}
+
+#user-info{
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo{
+    font-weight: 700;
+    margin: 5px;
+}
