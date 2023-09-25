@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/root.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input{
+            margin-top: 300px;
+            padding: 10px;
+            width: 250px;
+        }
+        .find-list{
+            list-style: none;
+            border: 1px solid #000;
+            border-radius: 15px;
+            background: #fff;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        li{
+            border-bottom: 1px solid;
+            width: 200px;
+            padding-bottom: 5px;
+        }
+        
+    </style>
 </head>
 <body>
-    <input type="search">
+    <input type="search" id="search">
+
+    <script src="scripts/search.js"></script>
 </body>
 </html>

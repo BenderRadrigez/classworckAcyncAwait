@@ -1,6 +1,5 @@
-const userInfo = document.querySelector("#user-info");
-const logout = document.querySelector("#logout");
-const editBtn = document.createElement("button");
+import { postsLink, albumsLink, todosLink, userInfo, logout, editBtn} from "./variables.js";
+
 editBtn.textContent = "edit";
 
 logout.addEventListener("click", () => {
@@ -22,3 +21,13 @@ for (const key in userData) {
         }
     }
 }
+
+postsLink.addEventListener("click", () => {
+    localStorage.setItem("class" ,JSON.stringify("postsSearch"));
+})
+albumsLink.addEventListener("click", () => {
+    localStorage.setItem("class" ,JSON.stringify("albumsSearch"));
+})
+todosLink.addEventListener("click", () => {
+    localStorage.setItem("class" ,JSON.stringify("todosSearch"));
+})

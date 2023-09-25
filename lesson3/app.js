@@ -19,7 +19,7 @@ email.addEventListener("keyup", () => {
 // get data
 async function fetchData(url) {
   const user = await fetch(
-    `${url}?username=${name.value}&email=${email.value}`
+    `${url}users?username=${name.value}&email=${email.value}`
   );
   return user;
 }
