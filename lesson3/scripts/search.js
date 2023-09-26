@@ -39,9 +39,19 @@ searchInput.addEventListener("keyup", () => {
     });
     searchDataArr.forEach((el)=> {
         ul.classList.add("find-list");
-        const li = document.createElement("li");
-        li.textContent = el.title;
-        ul.append(li);
+        
+        ul.append(makeLi(el.title, searchInput.value, searchInput.value.length));
     })
     body.append(ul);
 });
+
+function makeLi(string, find, findLength){
+    const findIndex = string.indexOf(find);
+    const li = document.createElement("li");
+    const left = string.slice(0, findIndex);
+    const findSpan = document.createElement("span");
+    findSpan.textContent = find;
+    const right = string.slice(findIndex + findLength, string.length - 1);
+    li.append(left, findSpan, right);
+    return li;
+}
